@@ -1,0 +1,16 @@
+#N canvas 572 329 450 300 10;
+#X obj 34 26 inlet;
+#X obj 34 64 t b b b;
+#X obj 53 96 timer;
+#X obj 53 130 > \$1;
+#X obj 34 162 spigot;
+#X obj 34 199 outlet;
+#X text 27 251 checks if there was at least $creation_argument time
+inbetween two bangs;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 2 0;
+#X connect 1 2 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 4 1;
+#X connect 4 0 5 0;
